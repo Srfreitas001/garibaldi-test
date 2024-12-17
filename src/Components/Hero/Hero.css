@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Croissant+One&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Georgian:wght@100..900&family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.hero {
+
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.6)); /* //url('../../assets/garibaldi-video.mp4'); */
+    background-size: cover;
+    background-position:center;
+    color: #fff;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    position:relative;
+
+}
+
+
+.hero-text {
+
+    text-align:center;
+    max-width:800px;
+
+}
+
+.hero-text h1 {
+
+    font-size: 78px;
+    font-weight:500;
+    font-family: "Noto Serif Georgian", serif;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+.hero-text p {
+
+    max-width: 700px;
+    margin:10px auto 25px;
+    line-height: 1.4;
+    font-family: "Noto Serif Georgian", serif;
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cubra todo o fundo */
+    z-index: -1; /* Faz com que o vídeo fique atrás do conteúdo */
+    
+}
+
+p {
+    margin: 0;
+}
+
+@media (min-width: 1020px){
+
+
+.HomeCover_encartVisitors {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+    z-index: 10;
+}
+
+
+.EncartInsertVisitorsDesktop_Default {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 48px 16px 32px;
+    background-color: #1a1a1a;
+    color: #fff;
+    gap: 48px;
+}
+
+.EncartInsertVisitorsDesktop_Default_left {
+    /* display: flex; */
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.EncartInsertVisitorsDesktop_Default_title {
+    font: 600 16px / 1.5 Montserrat, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.EncartInsertVisitors_StatusText {
+    font: 400 14px / 1.57 Roboto, Open Sans, Arial, Helvetica, sans-serif;
+}
+
+.EncartInsertVisitorsDesktop_Default_title p {
+
+    margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.EncartInsertVisitors_Horaires_Horaire span {
+
+    white-space: nowrap;
+
+} 
+
+.EncartInsertVisitors_Horaires_Horaire p {
+    margin: 0;
+}
+
+.EncartInsertVisitors_Horaires_Horaire {
+    display: flex;
+    align-items: center;
+}
+
+.montserrat-16, .montserrat-16-lowercase {
+    font: 600 16px / 1.5 Montserrat, Verdana, sans-serif;
+}
+
+.EncartInsertVisitors_Separator {
+    width: 1px;
+    align-self: stretch;
+    background-color: #5a5a5a;
+}
+
+.EncartInsertVisitorsDesktop_Default_right {
+    font: 400 16px / 1.56 Roboto, Open Sans, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.SvgRWrapper {
+    height: 1em;
+    width: 1em;
+    pointer-events: none;
+    fill: currentColor;
+}
+
+.EncartInsertVisitors_Horaires_Horaire_fleche {
+    margin: 0 12px;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.montserrat-16 {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+}
+
+/* --- OTHERWISE --- */
+
+@media (max-width: 1019px){
+.HomeCover_encartVisitors {
+    display: none;
+}
+
+}
+
+.HomeCover_bottom {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+}
+
+/* .HomeCover_Video_button {
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} */
+
+button {
+
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: #0000;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    text-transform: inherit;
+    line-height: inherit;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+
+/* .HomeCover_Video_playing, .HomeCover_Video_ready .HomeCover_Video_play {
+    opacity: 1;
+} */
+
+
+/* .HomeCover_Video_pause, .HomeCover_Video_play {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    transition: opacity .15s;
+    opacity: 0;
+    will-change: opacity;
+    display: block;
+    font-size: 1.1428571429em;
+} */
+
+/* .HomeCover_Video_innerButton {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .HomeCover_Video_button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} */
+
+
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+.HomeCover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00000080;
+    z-index: 1;
+    background-image: linear-gradient(0deg, #000000b3, #0000001a 25%, #0000 50%);
+    will-change: opacity;
+}
+
+/* -----media query ----- */
+
+@media (max-width: 850px){
+
+    .hero-text h1{
+        
+        font-size:60px;
+
+    }
+}
+
+@media (max-width: 650px){
+
+    .hero-text h1{
+        
+        font-size:40px;
+        max-width: 500px;
+        margin:auto;
+    }
+
+    .hero-text p {
+
+        font-size: 16px;
+        margin: 10px auto 25px;
+        max-width: 550px;
+
+    }
+}
+
+@media (max-width: 710px) {
+
+    .btn{
+
+        font-size: 12px;
+
+    }
+
+    .btn2 {
+
+        font-size: 12px;
+    }
+
+    .hero-text h1{
+
+        font-size: 50px;
+        max-width: 600px;
+        margin: auto;
+
+    }
+
+    .hero-text p {
+
+        font-size: 18px;
+        margin: 15px auto 25px;
+        max-width: 600px;
+    }
+}

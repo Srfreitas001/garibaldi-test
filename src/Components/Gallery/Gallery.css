@@ -1,0 +1,52 @@
+.gallery-box {
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.gallery-box-img img {
+    width: 43%;
+    border-radius: 10px;
+}
+
+
+/* -----media query ----- */
+@media (max-width: 800px) {
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery img {
+        width: 15%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Botão e animação */
+.btn3 {
+    background-color: transparent;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.film-icon {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    transition: transform 0.6s ease-in-out; /* Animação suave */
+    transform-origin: center;
+}
+
+.film-icon.rotate {
+    
+    transform: rotate(-120deg); /* Rotação de 360 graus */
+}
